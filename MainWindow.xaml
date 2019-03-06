@@ -1,0 +1,15 @@
+﻿<Window x:Class="WaveProgress.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WaveProgress"
+        xmlns:userControl="clr-namespace:WaveProgress.UserControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <userControl:WaveProgressControl x:Name="progress" Value="50" MaxValue="100"></userControl:WaveProgressControl>
+        <Button Width="60" Height="30" Margin="285,319,407,60" Click="Start_Btn_OnClick">Start</Button>
+        <Button Width="60" Height="30" Margin="408,319,284,60" Click="Reset_Btn_OnClick">reset</Button>
+    </Grid>
+</Window>
